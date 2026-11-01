@@ -6,7 +6,7 @@
 
 To summarise, interest rates help us understand the way that the value of money changes over time. Once we have put our initial money into an investment, the profit we earn will be the result of subtracting what we started with from what it has grown to. We get the per cent return from dividing this difference by the initial investment.
 
-**Per cent Return:**
+**Percent Return:**
 
 $$
 R = \frac{P_t - P_0}{P_0}
