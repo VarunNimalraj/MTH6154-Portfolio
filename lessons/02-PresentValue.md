@@ -5,7 +5,7 @@
 
 ## Summary
 
-Present value is a significant idea in financial math since money you have now is better than the same amount of money you get in the future. That's because if you keep your money instead of spending it right away, you can put it into an account where it earns interest. The amount of money we'd have to invest now to get a future payment is called the present value of the future payment.
+Present value is a significant idea in financial maths since money you have now is better than the same amount of money you get in the future. That's because if you keep your money instead of spending it right away, you can put it into an account where it earns interest. The amount of money we'd have to invest now to get a future payment is called the present value of the future payment.
 
 In order to determine the present value, we'll need to know what is called a "discount factor". A discount factor will take a future dollar amount and convert it to dollars today. The formula for the discount factor depends upon whether or not interest is compounded annually. If interest is compounded annually, then the discount factor formula can be determined from two variables: the annual interest rate and how many years it takes for the payment to arrive.
 
