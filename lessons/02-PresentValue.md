@@ -1,80 +1,122 @@
-# 1. Interest rates
+
+# 2. Present value
 
 [Back to contents](../README.md)
 
 ## Summary
 
-To summarise, interest rates help us understand the way that the value of money changes over time. Once we have put our initial money into an investment, the profit we earn will be the result of subtracting what we started with from what it has grown to. We get the per cent return from dividing this difference by the initial investment.
+Present value is an important concept in financial mathematics because money received today is worth more than the same amount received in the future. This is because money held today can be invested to earn interest. The **present value** of a future payment is the amount of money we would need to invest today to receive that payment at a later date.
 
-**Percent Return:**
-
-$$
-R = \frac{P_t - P_0}{P_0}
-$$
-
-If we invest some money for $t$ years, then the annualised simple rate of return will be equal to the total per cent return divided by the number of years you had the money invested.
-
-**Annualised Rate of Return:**
+To calculate present value, we use a **discount factor**, which converts a future amount of money into its value today. If interest is compounded annually at rate $r$, the discount factor is:
 
 $$
-r = \frac{R}{t}
+D(t)=\frac{1}{(1+r)^t}
 $$
 
-Compounding is a very important term. Compounding occurs when the interest is made on top of the original amount of money that was invested plus all of the previous amounts of money that were gained due to interest. So basically, if you make 10% each year, your account would be making 11% next year. Simple interest does not work like this; instead, simple interest just calculates interest based on the original amount of money. Compound interest allows your money to grow at a higher rate as the interest is re-invested back into your account.
-
-**Simple Interest Formula:**
+Therefore, the present value of a future payment $P$ received at time $t$ is:
 
 $$
-P_t = P_0(1 + rt)
+PV=P\times D(t)=\frac{P}{(1+r)^t}
 $$
 
-**Compound Interest Formula:**
+If interest is compounded continuously, the discount factor becomes:
 
 $$
-P_t = P_0\left(1 + \frac{r}{n}\right)^{nt}
+D(t)=e^{-rt}
 $$
 
-The more often you allow the bank to add or "compound" interest onto your principal, the higher your true or "effective" annual interest rate. This means that if you want to compare two investments with different compounding periods, you need to know the effective rate.
+Another important concept is **Net Present Value (NPV)**. This allows us to calculate the present value of multiple cash flows received at different times. We cannot simply add together payments received in different years because the value of money changes over time. Instead, each payment must be discounted to its present value before they are added together.
 
-**Formula for Effective Annual Interest Rate:**
-
-$$
-r_{\text{effective}} = \left(1 + \frac{r}{n}\right)^n - 1
-$$
-
-It is possible for banks to continually add interest (compounded) to your principal. When they do this, they use the natural exponential growth function to find out how much your account will be worth at some future date.
-
-**Continuously Compounding Interest Formula:**
+For a series of cash flows, the NPV is:
 
 $$
-P_t = P_0 e^{rt}
+NPV=\sum_{i=0}^{n}C_iD(t_i)
 $$
 
-Banks set their own base lending rates. However, since these rates fluctuate over time, most commercial banks choose to lock their borrowing costs using OIS's (Overnight Index Swaps). These OIS's essentially replace fixed payments with variable payments that are tied to the compounded overnight SONIA (Sterling Overnight Interbank Average) rate.
+where $C_i$ represents each cash flow and $t_i$ represents the time at which it occurs. An initial investment cost is treated as a negative cash flow.
 
-A key term is the "yield curve". It is a graph showing how lending rates change when you lend money for different lengths of time. A continuous yield curve is actually the average interest rate per unit time over an interval. A yield curve provides information about whether long term loans carry a greater risk than short term loans.
-
-**Yield Curve Equation:**
+When equal payments are received regularly, we can use a **geometric series** to simplify the calculation. If the same payment $C$ is received every year for $n$ years, the present value is:
 
 $$
-\bar{r}(T) = \frac{1}{T}\int_0^T r(t)\,dt
+PV=C\sum_{i=1}^{n}\frac{1}{(1+r)^i}
 $$
 
-Lastly, inflation affects how valuable investments become. An investor may see their investment rise in monetary terms but experience a loss of purchasing power due to increased prices. Therefore, even though an investor may receive a certain interest rate on their loan or investment, he/she will lose purchasing power. To adjust for this effect of inflation on investing returns, the "inflation adjusted interest rate" should be considered. The inflation adjusted interest rate takes into consideration both the inflation rate and the effective interest rate.
+This can be simplified to:
 
+$$
+PV=C\frac{1-(1+r)^{-n}}{r}
+$$
+
+If the payments continue forever, this is known as a **perpetuity**. For a positive annual interest rate, its present value is:
+
+$$
+PV=\frac{C}{r}
+$$
+
+Present value is also affected by changes in interest rates. When interest rates increase, the present value of future payments decreases because those payments are discounted more heavily. Similarly, when interest rates decrease, the present value increases. This creates **market risk**, as changes in interest rates can affect the value of financial investments.
+
+Another important concept is the **Internal Rate of Return (IRR)**, which is used to measure the return on an investment. The IRR is the discount rate that makes the net present value of an investment equal to zero.
+
+For an initial investment $C_0$ and future cash flows $C_1,\ldots,C_n$, the IRR satisfies:
+
+$$
+0=-C_0+\frac{C_1}{1+r}+\frac{C_2}{(1+r)^2}+\cdots+\frac{C_n}{(1+r)^n}
+$$
+
+Here, $C_0$ represents a positive initial cost, while the other cash flows are payments received in future years.
+
+The IRR can be compared with the prevailing interest rate to assess an investment. If the IRR is higher than the prevailing rate, the investment may be worthwhile. If it is lower, the investment may not offer a sufficient return.
+
+For an investment with one initial cash outflow followed only by positive future cash flows, the NPV decreases as the discount rate increases. This means the IRR is unique.
 
 ## My example
 
-A situation you made up (your own numbers, not the ones in the lecture
-notes), worked step by step.
+Suppose an investor pays £1,000 for an investment that provides £400 at the end of each year for three years. The prevailing annual effective interest rate is 5%.
+
+To determine whether the investment is worthwhile, we calculate the present value of the three future payments.
+
+The present value is:
+
+$$
+PV=\frac{400}{1.05}+\frac{400}{1.05^2}+\frac{400}{1.05^3}
+$$
+
+Discounting each payment gives:
+
+$$
+PV=380.95+362.81+345.54
+$$
+
+Therefore:
+
+$$
+PV\approx £1,089.30
+$$
+
+We then subtract the initial investment cost to calculate NPV:
+
+$$
+NPV=1089.30-1000
+$$
+
+$$
+\boxed{NPV=£89.30}
+$$
+
+Since the NPV is positive, the present value of the future payments exceeds the initial investment cost. Therefore, the investment would be worthwhile at the given discount rate.
 
 ## Solved exercises
 
-### Exercise 1.x (from Exercise Sheet 1)
+### Exercise 1 (from Tutorial Sheet 2)
 
-Question, then your solution.
+*Add the first selected tutorial question and its solution here.*
+
+### Exercise 2 (from Tutorial Sheet 2)
+
+*Add the second selected tutorial question and its solution here.*
 
 ## Spreadsheet
 
-[01-InterestRates.xlsx](../spreadsheets/01-InterestRates.xlsx): what it
-does, which cells to change and what to look at.
+[02-PresentValue.xlsx](../spreadsheets/02-PresentValue.xlsx)
+
+*Add a short explanation of what the spreadsheet calculates, which input cells can be changed, and how the results respond to those changes.*
