@@ -1,80 +1,116 @@
-# 1. Interest rates
+
+# 3. Immunisation
 
 [Back to contents](../README.md)
 
 ## Summary
 
-To summarise, interest rates help us understand the way that the value of money changes over time. Once we have put our initial money into an investment, the profit we earn will be the result of subtracting what we started with from what it has grown to. We get the per cent return from dividing this difference by the initial investment.
+Financial Mathematics employs immunisation techniques to provide protection to investors from changing interest rates. In the last week's session, I learned that Net Present Value (NPV) of a series of cash inflows/outs depend upon the current interest rate. A change in interest rate will result in a change to the NPV of future cash payments. As a consequence, an investment that was previously fairly priced could experience increased/decreased value due to this change. Thus creating Market Risk.
 
-**Percent Return:**
-
-$$
-R = \frac{P_t - P_0}{P_0}
-$$
-
-If we invest some money for $t$ years, then the annualised simple rate of return will be equal to the total per cent return divided by the number of years you had the money invested.
-
-**Annualised Rate of Return:**
+For a series of cash flows under continuous compounding, NPV is calculated using:
 
 $$
-r = \frac{R}{t}
+NPV(r)=\sum_{i=0}^{n}C_i e^{-rt_i}
 $$
 
-Compounding is a very important term. Compounding occurs when the interest is made on top of the original amount of money that was invested plus all of the previous amounts of money that were gained due to interest. So basically, if you make 10% each year, your account would be making 11% next year. Simple interest does not work like this; instead, simple interest just calculates interest based on the original amount of money. Compound interest allows your money to grow at a higher rate as the interest is re-invested back into your account.
+When considering whether a financial transaction is fair/balanced in terms of Net Present Value (NPV), the consideration is based upon the fact that there is currently a zero NPV at the existing interest rate. If there were a change to the interest rate either upward/downward then the NPV would no longer be zero. The goal of Immunisation is to minimise the effects of such changes to the value of the investment.
 
-**Simple Interest Formula:**
+There are several types of methods employed in achieving immunisation. One type is referred to as **First-Order Immunisation**. It takes place when the NPV is initially zero and its first derivative with respect to the prevailing interest rate is also equal to zero. Essentially, as long as small interest rate changes do not significantly affect the NPV; then the investment is insensitive to these changes.
 
-$$
-P_t = P_0(1 + rt)
-$$
-
-**Compound Interest Formula:**
+**First-Order Immunisation Conditions:**
 
 $$
-P_t = P_0\left(1 + \frac{r}{n}\right)^{nt}
+NPV(r_0)=0
 $$
 
-The more often you allow the bank to add or "compound" interest onto your principal, the higher your true or "effective" annual interest rate. This means that if you want to compare two investments with different compounding periods, you need to know the effective rate.
-
-**Formula for Effective Annual Interest Rate:**
-
 $$
-r_{\text{effective}} = \left(1 + \frac{r}{n}\right)^n - 1
+NPV'(r_0)=0
 $$
 
-It is possible for banks to continually add interest (compounded) to your principal. When they do this, they use the natural exponential growth function to find out how much your account will be worth at some future date.
+First Order Immunisation does not guarantee protection from larger changes in interest rates. Therefore, an additional method of immunisation has been developed. This method is known as **Redington Immunisation**. There are three requirements to achieve Redington Immunisation. First, the NPV must be equal to zero at the existing interest rate. Second, the first derivative of NPV with respect to the interest rate must also be equal to zero. Thirdly, the second derivative of NPV must be greater than zero. This third condition guarantees that the NPV will have a local minimum of zero, so even if small changes occur in the interest rate they will not negatively affect the NPV.
 
-**Continuously Compounding Interest Formula:**
-
-$$
-P_t = P_0 e^{rt}
-$$
-
-Banks set their own base lending rates. However, since these rates fluctuate over time, most commercial banks choose to lock their borrowing costs using OIS's (Overnight Index Swaps). These OIS's essentially replace fixed payments with variable payments that are tied to the compounded overnight SONIA (Sterling Overnight Interbank Average) rate.
-
-A key term is the "yield curve". It is a graph showing how lending rates change when you lend money for different lengths of time. A continuous yield curve is actually the average interest rate per unit time over an interval. A yield curve provides information about whether long term loans carry a greater risk than short term loans.
-
-**Yield Curve Equation:**
+**Redington Immunisation Conditions:**
 
 $$
-\bar{r}(T) = \frac{1}{T}\int_0^T r(t)\,dt
+NPV(r_0)=0
 $$
 
-Lastly, inflation affects how valuable investments become. An investor may see their investment rise in monetary terms but experience a loss of purchasing power due to increased prices. Therefore, even though an investor may receive a certain interest rate on their loan or investment, he/she will lose purchasing power. To adjust for this effect of inflation on investing returns, the "inflation adjusted interest rate" should be considered. The inflation adjusted interest rate takes into consideration both the inflation rate and the effective interest rate.
+$$
+NPV'(r_0)=0
+$$
 
+$$
+NPV''(r_0)>0
+$$
+
+Understanding the differences between assets and liabilities is an equally important aspect of immunising investments. Assets include all positive cash flows you receive and liabilities represent those payments you must make. The total NPV is therefore derived by calculating the present value of your assets minus the present value of your liabilities. In order for the investment to be in balance at inception, both your asset(s) and liability(ies) must have present values that are equal.
+
+**Net Present Value of Assets and Liabilities:**
+
+$$
+NPV(r)=NPV_+(r)-NPV_-(r)
+$$
+
+For the investment to be balanced at the prevailing interest rate:
+
+$$
+NPV_+(r_0)=NPV_-(r_0)
+$$
+
+Duration is another key factor related to immunising investments. Duration is defined as a measure of the weighted average amount of time until you receive your cash flows and their respective weights being established by the present values of each individual cash flow. Understanding duration provides insight into how sensitive your investment will be to potential changes in interest rates. Additionally, for investments involving positive cash flows and utilising continuous compounding; duration may also be expressed through use of the first derivative of present value.
+
+**Duration Formula:**
+
+$$
+\tau=\frac{\sum_{i=1}^{n}t_iC_i e^{-rt_i}}{\sum_{i=1}^{n}C_i e^{-rt_i}}
+$$
+
+**Duration Using the Derivative of Present Value:**
+
+$$
+\tau=-\frac{PV'(r)}{PV(r)}
+$$
+
+In order for an investment to be immunised to first order, both the durations of your assets and liabilities must be equal and their respective present values must also be equal. This minimises the effect on your financial position resulting from small changes in interest rates.
+
+**First-Order Immunisation of Assets and Liabilities:**
+
+$$
+NPV_+(r_0)=NPV_-(r_0)
+$$
+
+$$
+\tau_+=\tau_-
+$$
+
+Finally, interest rates can vary depending on the compounding convention employed (e.g., annual vs. continuous). While differing compounding conventions require varying calculations, equivalent rates under these conventions give identical present values and therefore the criteria required for achieving Redington immunisation remains consistent across differing compounding conventions.
+
+**Relationship Between Equivalent Interest Rates:**
+
+$$
+\frac{1}{1+r_a}=e^{-r_c}
+$$
+
+where $r_a$ is the annually compounded rate and $r_c$ is the continuously compounded rate.
+
+Overall, Immunisation represents an important tool within financial institutions to manage interest rate risk. Through equating the durations and balancing your assets/liabilities, financial institutions are able to limit exposure from small variations in interest rates.
 
 ## My example
 
-A situation you made up (your own numbers, not the ones in the lecture
-notes), worked step by step.
+*Add your own worked example demonstrating immunisation of assets and liabilities.*
 
 ## Solved exercises
 
-### Exercise 1.x (from Exercise Sheet 1)
+### Exercise 1 (from Tutorial Sheet 3)
 
-Question, then your solution.
+*Add the first selected tutorial question and its solution here.*
+
+### Exercise 2 (from Tutorial Sheet 3)
+
+*Add the second selected tutorial question and its solution here.*
 
 ## Spreadsheet
 
-[01-InterestRates.xlsx](../spreadsheets/01-InterestRates.xlsx): what it
-does, which cells to change and what to look at.
+[03-Immunisation.xlsx](../spreadsheets/03-Immunisation.xlsx)
+
+*Add an explanation of what the spreadsheet calculates, which input cells can be changed, and how changes in interest rates affect the results.*
