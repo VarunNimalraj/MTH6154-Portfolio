@@ -63,10 +63,104 @@ $$
 Lastly, inflation affects how valuable investments become. An investor may see their investment rise in monetary terms but experience a loss of purchasing power due to increased prices. Therefore, even though an investor may receive a certain interest rate on their loan or investment, he/she will lose purchasing power. To adjust for this effect of inflation on investing returns, the "inflation adjusted interest rate" should be considered. The inflation adjusted interest rate takes into consideration both the inflation rate and the effective interest rate.
 
 
-## My example
+### My example
 
-A situation you made up (your own numbers, not the ones in the lecture
-notes), worked step by step.
+
+Suppose I invest £2,400 into a savings account offering a nominal annual interest rate of 4.8%, compounded quarterly. The investment will be held for three years.
+
+## Step 1 – Compound Interest Calculation
+
+In order to calculate the final amount for my £2400 investment, I will utilise the compound interest formula. The investment earns interest quarterly; therefore, the interest is applied to the account 12 (four times per year * three years) times. Substituting the values for initial deposit, annual interest rate, number of times interest is compounded annually and length of time of the investment into the compound interest formula provides me with a final balance of approximately £2769.35.
+
+**Compound Interest Formula:**
+
+$$
+P_t=P_0\left(1+\frac{r}{n}\right)^{nt}
+$$
+
+**Substituting the values:**
+
+$$
+P_3=2400\left(1+\frac{0.048}{4}\right)^{4\times3}
+$$
+
+$$
+P_3=2400(1.012)^{12}
+$$
+
+$$
+\boxed{P_3=£2,769.35}
+$$
+
+From this value, I can easily compute the profit by subtracting the original amount of £2400 from the final amount. Therefore, the profit generated through compound interest over the three years is £369.35.
+
+$$
+\text{Profit}=2769.35-2400
+$$
+
+$$
+\boxed{\text{Profit}=£369.35}
+$$
+
+## Step 2 – Effective Annual Interest Rate Calculation
+
+The effective annual interest rate reflects how often interest is compounded during the course of one year. In this case, since interest is compounded quarterly and the nominal annual interest rate offered was 4.8%, the effective annual interest rate will be greater than the nominal interest rate as a result of being based upon compounded interest.
+
+**Effective Annual Interest Rate Formula:**
+
+$$
+r_{\text{effective}}=\left(1+\frac{r}{n}\right)^n-1
+$$
+
+**Substituting the values:**
+
+$$
+r_{\text{effective}}=\left(1+\frac{0.048}{4}\right)^4-1
+$$
+
+$$
+r_{\text{effective}}=0.0488709
+$$
+
+$$
+\boxed{r_{\text{effective}}\approx4.89\%}
+$$
+
+By utilising the formula for effective annual interest rates, I am able to compute an effective annual interest rate of 4.89%. This clearly illustrates that the effective interest rate is larger than the nominal interest rate when compounded interest is utilised in lieu of simple interest.
+
+## Step 3 – Comparison of Results Using Simple Interest vs. Compound Interest
+
+Finally, I will compute how large the investment would grow if simple interest were utilised versus compound interest.
+
+As stated earlier, unlike compound interest which utilises prior investments and their associated interest earnings in calculating future amounts owed, simple interest uses only the principal invested at the beginning of the period. As a consequence, simple interest calculations require less effort than those involving compound interest since no new amounts need to be computed every year. Utilising the simple interest formula, the amount due after three years would be £2745.60.
+
+**Simple Interest Formula:**
+
+$$
+P_t=P_0(1+rt)
+$$
+
+**Substituting the values:**
+
+$$
+P_3=2400(1+0.048\times3)
+$$
+
+$$
+P_3=2400(1.144)
+$$
+
+$$
+\boxed{P_3=£2,745.60}
+$$
+
+**Difference between compound and simple interest:**
+
+$$
+2769.35-2745.60=£23.75
+$$
+
+When comparing the results from step 1 and step 3 above, we see that the investment grew significantly larger with compound interest (£2769.35) than with simple interest (£2745.60). Thus, we see the benefits provided by compound interest for creating significant wealth creation opportunities through generating interest on both principal deposited initially and prior-earned interests.
 
 ## Solved exercises
 
