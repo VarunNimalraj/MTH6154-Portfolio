@@ -94,7 +94,7 @@ P_3=2400(1.012)^{12}
 $$
 
 $$
-\boxed{P_3\approx £2,769.35}
+\boxed{P_3\approx \text{£2,769.35}}
 $$
 
 From this value, I can easily compute the profit by subtracting the original amount of £2,400 from the final amount. Therefore, the profit generated through compound interest over the three years is £369.35.
@@ -104,7 +104,7 @@ $$
 $$
 
 $$
-\boxed{\text{Profit}=£369.35}
+\boxed{\text{Profit}=\text{£369.35}}
 $$
 
 ### Step 2 – Effective Annual Interest Rate Calculation
@@ -156,13 +156,13 @@ P_3=2400(1.144)
 $$
 
 $$
-\boxed{P_3=£2,745.60}
+\boxed{P_3=\text{£2,745.60}}
 $$
 
 **Difference between compound and simple interest:**
 
 $$
-2769.35-2745.60=£23.75
+2769.35-2745.60=\text{£23.75}
 $$
 
 When comparing the results from step 1 and step 3 above, we see that the investment grew slightly larger with compound interest (£2,769.35) than with simple interest (£2,745.60). Thus, we see the benefits provided by compound interest for creating wealth through generating interest on both principal deposited initially and prior-earned interest.
@@ -192,7 +192,7 @@ P_3=700(1.03)^3
 $$
 
 $$
-\boxed{P_3\approx £764.91}
+\boxed{P_3\approx \text{£764.91}}
 $$
 
 **(ii) Monthly Compounded**
@@ -208,7 +208,7 @@ P_3=700(1.0025)^{36}
 $$
 
 $$
-\boxed{P_3\approx £765.84}
+\boxed{P_3\approx \text{£765.84}}
 $$
 
 **(iii) Twice Per Year Type of Compounding (Semi-annually)**
@@ -224,7 +224,7 @@ P_3=700(1.015)^6
 $$
 
 $$
-\boxed{P_3\approx £765.41}
+\boxed{P_3\approx \text{£765.41}}
 $$
 
 **(iv) Continuously Compounded**
@@ -240,7 +240,7 @@ P_3=700e^{0.09}
 $$
 
 $$
-\boxed{P_3\approx £765.92}
+\boxed{P_3\approx \text{£765.92}}
 $$
 
 From looking at our answers from above, it can clearly be seen that the deposit which had continuous compounding produced the largest final value of deposits. Next was monthly compounding, followed by semi-annually compounding, and lastly annual compounding. It also shows that more frequent compounding will result in earning more interest based upon the fact that the nominal annual interest rate remained constant throughout this example.
