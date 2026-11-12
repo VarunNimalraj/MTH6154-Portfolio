@@ -313,4 +313,7 @@ $$
 As indicated above, based upon the Effective Annual Interest Rates, Company C had the lowest Effective Annual Interest Rate. This is somewhat unexpected since Company C has the highest nominal interest rate of all three credit card companies. Two factors contributed to this occurrence. First, Companies A and B have a greater ability to compound their interest at a faster rate than does Company C. Second, even though Company C has a high nominal interest rate, its lower compounding frequency limits the total amount of compounding that takes place over the course of an entire year.
 
 Consequently, using interest rates alone, Company C appears to offer the least expensive borrowing option of the three options compared.
+
 ## Spreadsheet
+
+[Download my Week 1 Excel spreadsheet](../spreadsheets/01-InterestRates.xlsx)
