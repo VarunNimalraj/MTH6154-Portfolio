@@ -115,7 +115,7 @@ $$
 
 ## Solved exercises
 
-### Task 1 — Compound Interest and Inflation
+### Exercise 1 — Compound Interest and Inflation
 
 **Part (a)**
 
