@@ -7,16 +7,12 @@ module MTH6154 Financial Mathematics I.
 
 | Week | Lesson | Notes | Spreadsheet |
 |---|---|---|---|
-| 1 | Interest rates | [notes](lessons/01-InterestRates.md) | [xlsx](spreadsheets/01-InterestRates.xlsx) |
-| 2 | Present value | [notes](lessons/02-PresentValue.md) | [xlsx](spreadsheets/02-PresentValue.xlsx) |
-| 3 | Immunisation | | |
-| 4 | Bonds | | |
-| 5 | Stochastic interest rates | | |
-| 6 | Equities and derivatives | | |
-| 8 | The arbitrage theorem | | |
-| 9 | One-period binomial model | | |
-| 10 | Multi-period binomial model | | |
-| 11 | Black–Scholes | | |
+| 1 | Interest rates | [notes](lessons/01-InterestRates.md) | |
+| 2 | Present value | [notes](lessons/02-PresentValue.md) | |
+| 3 | Immunisation | [notes](lessons/03-Immunisation.md) | |
+| 4 | Bonds | [notes](lessons/04-Bonds.md) | |
+| 5 | Stochastic interest rates | [notes](lessons/05-StochasticInterestRates.md) | |
+| 6 | Equities and derivatives | [notes](lessons/06-EquitiesAndDerivatives.md) | |
 
 ## AI use
 
