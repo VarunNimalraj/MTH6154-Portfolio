@@ -49,7 +49,69 @@ $$
 r_{\text{real}}=\frac{r_{\text{effective}}-i}{1+i}
 $$
 
-## My example
+
+## My Example
+
+Suppose I invested £2,400 for three years at a fixed nominal annual interest rate of 4.8% on a savings account that is compounded every quarter. I wish to determine what my total investment will be worth by the end of the third year using both compound interest and simple interest.
+
+Interest is compounded each quarter which means there are 4 quarters within one year. There are therefore 4 x 3 = 12 quarters (or compounding periods) over the course of three years. Therefore the quarterly interest rate is 1.2%.
+
+$$
+\frac{0.048}{4}=0.012
+$$
+
+I can use the Compound Interest Formula to work out how much the initial investment has grown by the end of the three years (£2,769.35). Using this formula we find I have made an additional £369.35 in interest.
+
+$$
+P_t=P_0\left(1+\frac{r}{n}\right)^{nt}
+$$
+
+$$
+P_t=2400\left(1+\frac{0.048}{4}\right)^{12}
+$$
+
+$$
+P_t\approx2769.35
+$$
+
+**Total interest earned:**
+
+$$
+2769.35-2400=369.35
+$$
+
+Therefore the effective annual interest rate of the savings account is approximately 4.89%, which is a little bit greater than the nominal rate as a result of compounding throughout the year.
+
+$$
+r_{\text{effective}}=\left(1+\frac{0.048}{4}\right)^4-1
+$$
+
+$$
+r_{\text{effective}}\approx0.04887
+$$
+
+**Effective annual interest rate: 4.89%**
+
+If I had used simple interest rather than compound interest my total investment would have been worth £2,745.60. This is approximately £23.75 less than the total value of my compound interest investment.
+
+$$
+P_t=P_0(1+rt)
+$$
+
+$$
+P_t=2400(1+0.048\times3)
+$$
+
+$$
+P_t=2745.60
+$$
+
+**Difference between compound and simple interest:**
+
+$$
+2769.35-2745.60=23.75
+$$
+
 
 ## Solved exercises
 
