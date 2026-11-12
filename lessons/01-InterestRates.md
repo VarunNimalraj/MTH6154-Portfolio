@@ -229,7 +229,7 @@ These comparative analyses show how beneficial it is to compound investments mor
 
 **Part (d)**
 
-Your last task is to calculate how many years it will require for an original deposit of £700 to grow into £1,000 provided that it earns an annual interest rate of 3% compounded semi-annually.
+The last task is to calculate how many years it will require for an original deposit of £700 to grow into £1,000 provided that it earns an annual interest rate of 3% compounded semi-annually.
 
 The general formula for determining future values is:
 
