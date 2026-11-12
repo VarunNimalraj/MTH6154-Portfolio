@@ -115,7 +115,7 @@ $$
 
 ## Solved exercises
 
-### Exercise 1 - Compound Interest and Inflation
+### Exercise 1
 
 **Part (a)**
 
@@ -265,4 +265,52 @@ $$
 
 Therefore, since your investment is compounded every 6 months, your investment will reach £1,000 for the first time at the end of Year 12
 
+
+### Exercise 6
+
+The purpose of this comparative analysis is to evaluate the comparative cost of borrowing from three different credit card companies. The primary differences among these credit card companies include the amount of nominal interest they charge and how frequently they compound interest. Credit Card Company A compounds daily and charges a 23.4% annual nominal interest rate. Credit Card Company B compounds monthly and charges a 23.5% annual nominal interest rate. Credit Card Company C compounds annually and charges a 24.2% annual nominal interest rate.
+
+In order to compare the effective borrowing costs of each credit card company, one must calculate each credit card company's Effective Annual Interest Rate. As previously stated, since interest can be compounded in many different manners within a calendar year, calculating each credit card company's Effective Annual Interest Rate will allow one to ascertain whether or not one credit card company is charging a lower effective interest rate per pound borrowed than another credit card company.
+
+**Effective Annual Interest Rate Formula:**
+
+$$
+r_{\text{effective}}=\left(1+\frac{r}{n}\right)^n-1
+$$
+
+The calculated Effective Annual Interest Rates of each credit card company are as follows:
+
+**Company A: 26.35%**
+
+$$
+r_A=\left(1+\frac{0.234}{365}\right)^{365}-1
+$$
+
+$$
+r_A\approx0.26355
+$$
+
+**Company B: 26.20%**
+
+$$
+r_B=\left(1+\frac{0.235}{12}\right)^{12}-1
+$$
+
+$$
+r_B\approx0.26204
+$$
+
+**Company C: 24.20%**
+
+$$
+r_C=(1+0.242)^1-1
+$$
+
+$$
+r_C=0.242
+$$
+
+As indicated above, based upon the Effective Annual Interest Rates, Company C had the lowest Effective Annual Interest Rate. This is somewhat unexpected since Company C has the highest nominal interest rate of all three credit card companies. Two factors contributed to this occurrence. First, Companies A and B have a greater ability to compound their interest at a faster rate than does Company C. Second, even though Company C has a high nominal interest rate, its lower compounding frequency limits the total amount of compounding that takes place over the course of an entire year.
+
+Consequently, using interest rates alone, Company C appears to offer the least expensive borrowing option of the three options compared.
 ## Spreadsheet
