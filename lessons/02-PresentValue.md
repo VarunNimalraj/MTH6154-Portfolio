@@ -107,3 +107,163 @@ $$
 $$
 NPV = 54.55
 $$
+
+## Solved Exercises
+
+### Exercise 1 – Internal Rate of Return
+
+This task involves an investment of £1,000 at start-up. The first £500 payment occurs in year two. In year four, the second payment of £750 occurs.
+
+The goal is to find out what the Internal Rate of Return (IRR) for the above investment would be.
+
+In other words, this is the interest rate where the Net Present Value (NPV) of the investment is zero.
+
+To achieve this, I have to discount each of the future cash flows to their current value.
+
+Therefore, the sum of all the current value cash flows should equate to the amount of the original investment of £1,000.
+
+**IRR Equation:**
+
+$$
+1000 = \frac{500}{(1+r)^2} + \frac{750}{(1+r)^4}
+$$
+
+Because the cash flows occur in years two and four, the calculations can be simplified using a single variable.
+
+**Introducing a New Variable:**
+
+$$
+x = (1+r)^2
+$$
+
+After inserting this new variable into the existing formula, we get a quadratic equation.
+
+$$
+1000 = \frac{500}{x} + \frac{750}{x^2}
+$$
+
+Multiplying through by the squared variable:
+
+$$
+1000x^2 = 500x + 750
+$$
+
+Rearranging:
+
+$$
+x^2 - 0.5x - 0.75 = 0
+$$
+
+When you solve this quadratic equation, you will obtain two potential solutions for the new variable.
+
+**Using the Quadratic Formula:**
+
+$$
+x = \frac{0.5 \pm \sqrt{0.25+3}}{2}
+$$
+
+$$
+x_1 \approx 1.15139
+$$
+
+$$
+x_2 \approx -0.65139
+$$
+
+However, as one of those potential solutions is negative and therefore could not possibly represent our needed growth factor, we must reject it.
+
+**Calculating IRR:**
+
+$$
+(1+r)^2 = 1.15139
+$$
+
+$$
+1+r = \sqrt{1.15139}
+$$
+
+$$
+r = \sqrt{1.15139}-1
+$$
+
+$$
+r \approx 0.0730 = 7.30\%
+$$
+
+Using the positive result from the previous step, we obtain an approximate IRR of 7.30%.
+
+---
+
+### Exercise 4 – Present Value of a Perpetuity
+
+This question covers an infinite series of payments or a perpetuity that is paid £2,500 annually; the effective annual interest rate for this perpetual annuity is 4% p.a. A perpetuity refers to a sequence of equal, periodic payments that are made at fixed intervals indefinitely. This example examines the relationship between the timing of the first payment and the resultant present value of the perpetuity.
+
+#### Part (a)
+
+The initial payment is received after one year.
+
+Because there will never be a final payment from this perpetuity, we may use a formula that divides the annual payment by the annual interest rate as follows:
+
+**Present Value of a Perpetuity:**
+
+$$
+PV = \frac{C}{r}
+$$
+
+$$
+PV = \frac{2500}{0.04}
+$$
+
+$$
+PV = 62500
+$$
+
+£2,500 / .04 = £62,500
+
+This represents the present value of the perpetuity, which begins with receipt of the first payment one year from now.
+
+#### Part (b)
+
+The first payment is received immediately.
+
+Similar to Part (a), since we know the perpetuity's payments continue indefinitely, the present value will again be determined by dividing the annual payment by the effective annual interest rate.
+
+However, unlike Part (a), we also have to add another £2,500 to the result from Part (a). This £2,500 is included in the present value because it is received today. Because this payment is received at the current time, we do not need to discount it. Therefore, the total present value of the perpetuity equals £65,000.
+
+**Present Value Calculation:**
+
+$$
+PV = 2500 + \frac{2500}{0.04}
+$$
+
+$$
+PV = 2500 + 62500
+$$
+
+$$
+PV = 65000
+$$
+
+#### Part (c)
+
+The first payment is received in ten years.
+
+We have previously established that the perpetuity has a value of £62,500 at the end of Year 9. However, we wish to find its value at Time Zero. To accomplish this, we apply the discount factor for nine years to arrive at an approximate present value of £43,911.67.
+
+**Discounting Back Nine Years:**
+
+$$
+PV_0 = \frac{62500}{(1+0.04)^9}
+$$
+
+$$
+PV_0 = \frac{62500}{(1.04)^9}
+$$
+
+$$
+PV_0 \approx 43911.67
+$$
+
+#### Summary
+
+The above examples illustrate how the timing of receiving payments affects their present value. Receipts received earlier increase their present value while receipts delayed decrease their value.
