@@ -61,3 +61,49 @@ $$
 $$
 
 By comparing the IRR of an investment with other opportunities at the same point in time, it becomes easier to decide if an investment is a viable option.
+
+## My Example
+
+An investment with an initial cost of £900 would pay out £550 in one year's time, and £550 in two years' time. To determine if it's worth investing in at 10%, you need to calculate the present value of each payout as well as both payouts combined.
+
+**Present Value Formula:**
+
+$$
+PV = \frac{FV}{(1+r)^t}
+$$
+
+**Present Value of the First Payment:**
+
+$$
+PV_1 = \frac{550}{1.10} = 500
+$$
+
+**Present Value of the Second Payment:**
+
+$$
+PV_2 = \frac{550}{(1.10)^2} \approx 454.55
+$$
+
+The total for the two payments is £1100 but because you don't get either of those until later, neither of the payments have their full values now. The first payment has a PV (present value) of £500; the second payment has a PV of about £454.55. The total PV of both payments is therefore £954.55.
+
+**Total Present Value:**
+
+$$
+PV_{\text{total}} = 500 + 454.55 = 954.55
+$$
+
+Since your original investment was £900, your Net Present Value (NPV) from this investment would be roughly £54.55. With a positive NPV, the investment yields more than the 10% discount rate.
+
+**Net Present Value Formula:**
+
+$$
+NPV = PV_{\text{total}} - I_0
+$$
+
+$$
+NPV = 954.55 - 900
+$$
+
+$$
+NPV = 54.55
+$$
