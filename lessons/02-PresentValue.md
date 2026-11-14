@@ -270,4 +270,6 @@ The above examples illustrate how the timing of receiving payments affects their
 
 ## Spreadsheet
 
-[Week 2 – Present Value Spreadsheet](../spreadsheets/02-PresentValue.xlsx)
+## Spreadsheet
+
+[Download my Week 2 Excel spreadsheet](../spreadsheets/02-PresentValue.xlsx)
