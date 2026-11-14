@@ -267,3 +267,7 @@ $$
 #### Summary
 
 The above examples illustrate how the timing of receiving payments affects their present value. Receipts received earlier increase their present value while receipts delayed decrease their value.
+
+## Spreadsheet
+
+[Week 2 – Present Value Spreadsheet](../spreadsheets/02-PresentValue.xlsx)
