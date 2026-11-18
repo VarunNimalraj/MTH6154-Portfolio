@@ -447,3 +447,9 @@ $$
 | Effective Duration | 2.32 | 3.49 |
 | Convexity | 5.62 | 12.43 |
 
+---
+
+## Spreadsheet
+
+[Download my Week 3 Excel spreadsheet](../spreadsheets/03-Immunisation.xlsx)
+
