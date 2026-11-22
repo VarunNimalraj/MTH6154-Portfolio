@@ -70,3 +70,48 @@ Where:
 
 These formulas use effective annual rates and annual compounding.
 
+
+## My Example – Calculating the Price of a Bond
+
+Suppose an investor is considering purchasing a bond with a face value of £1,000, an annual coupon rate of 4%, and a maturity of 3 years. The market yield is 5%.
+
+The investor's total cash receipts from the bond would consist of the periodic interest received (coupon income) and the amount received upon maturity. For example, in Year 1 the investor would have earned £40 as coupon income.
+
+In addition to this, in Year 3, the investor would also receive the face amount of £1000. Therefore, for that year alone, the investor would receive £1040.
+
+Each of these future cash flows should be discounted by the 5% market yield.
+
+Therefore, we can determine the fair value of the investment by adding up all of the present value of each of these cash flows.
+
+The sum of the present value of each of the cash flows is calculated as follows:
+
+**Year 1:**
+
+$$
+PV_1=\frac{40}{1.05}=38.10
+$$
+
+**Year 2:**
+
+$$
+PV_2=\frac{40}{1.05^2}=36.28
+$$
+
+**Year 3:**
+
+$$
+PV_3=\frac{1040}{1.05^3}=898.39
+$$
+
+Therefore, the total present value is:
+
+$$
+PV=38.10+36.28+898.39
+$$
+
+$$
+PV=972.77
+$$
+
+Thus, we find that the estimated price of the bond is approximately £972.77.
+
