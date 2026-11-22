@@ -115,3 +115,126 @@ $$
 
 Thus, we find that the estimated price of the bond is approximately £972.77.
 
+
+## Solved Exercises
+
+### Exercise 1 – Bond Cash Flows
+
+We have been provided with a 3 year bond, which has a nominal amount of £200,000 and has an annual coupon rate of 6%, paid semi-annually. The bond will be redeemed at par when it expires.
+
+As we know that semi-annually, the investor will receive their coupon interest (and therefore the annual coupon rate is halved), we can calculate what each semi-annual payment will be as follows;
+
+Annual Coupon Rate = 0.06
+
+Coupon Interest Halved for Semi-Annually = 0.06 /2 = 0.03
+
+Semi-Annual Payment = £200,000 x 0.03 = £6000
+
+**Calculations:**
+
+$$
+\text{Semi-Annual Coupon Rate}=\frac{0.06}{2}=0.03
+$$
+
+$$
+C=200,000\times0.03=6,000
+$$
+
+There will be six semi-annual payments made to the investor over the next three years. For the first five of these payments, the investor will receive £6000 on each occasion. On the sixth occasion (after the third year) the investor will receive both the last coupon interest of £6000 and the repayment of the bond's nominal amount of £200,000.
+
+The sixth payment (£206,000) is comprised of both the last coupon payment (£6000) and the redemption value of the bond (£200,000).
+
+$$
+C_6=6,000+200,000=206,000
+$$
+
+Therefore, the investor’s cash flow stream is:
+
+**(£6,000, £6,000, £6,000, £6,000, £6,000, £206,000).**
+
+---
+
+### Exercise 6 – Spot Rates and Forward Rates
+
+We are told there are 1000 zero coupon bonds maturing after one year with an aggregate value of £931.00. There are also 1000 zero coupon bonds maturing after 3 years and they have an aggregate value of £785.00.
+
+Hence each bond is valued at £0.931 and £0.785 respectively.
+
+$$
+V_1=\frac{931}{1000}=0.931
+$$
+
+$$
+V_3=\frac{785}{1000}=0.785
+$$
+
+**Part (a) – Calculating Spot Rates**
+
+To solve for the spot rates of the one year and three year bonds in (a) we will apply the zero-coupon bond pricing equation in reverse order to determine the appropriate interest rates.
+
+The zero-coupon bond pricing formula is:
+
+$$
+V_T=\frac{1}{(1+s_T)^T}
+$$
+
+For the one-year bond:
+
+$$
+0.931=\frac{1}{1+s_1}
+$$
+
+$$
+s_1=\frac{1}{0.931}-1
+$$
+
+$$
+s_1\approx0.0741=7.4\%
+$$
+
+For the three-year bond:
+
+$$
+0.785=\frac{1}{(1+s_3)^3}
+$$
+
+$$
+s_3=\left(\frac{1}{0.785}\right)^{1/3}-1
+$$
+
+$$
+s_3\approx0.0840=8.4\%
+$$
+
+Spot rates were calculated to be 7.4% for the one year bond and 8.4% for the three year bond.
+
+**Part (b) – Calculating the Forward Rate**
+
+In (b) we want to compute the two year forward rate from Years 1-3. The forward rate can be found using the relationships among spot rates and forward rates. Forward rate was approximated as 8.9%.
+
+Using the relationship:
+
+$$
+(1+f_{1,3})^2=\frac{(1+s_3)^3}{1+s_1}
+$$
+
+We can also express this using the zero-coupon bond prices:
+
+$$
+(1+f_{1,3})^2=\frac{V_1}{V_3}
+$$
+
+$$
+(1+f_{1,3})^2=\frac{0.931}{0.785}
+$$
+
+$$
+f_{1,3}=\sqrt{\frac{0.931}{0.785}}-1
+$$
+
+$$
+f_{1,3}\approx0.089=8.9\%
+$$
+
+This is the agreed upon annual effective interest rate which has been agreed on today for the interval from the end of Year 1 to the end of Year 3.
+
