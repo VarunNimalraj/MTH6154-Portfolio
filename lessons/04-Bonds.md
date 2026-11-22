@@ -238,3 +238,9 @@ $$
 
 This is the agreed upon annual effective interest rate which has been agreed on today for the interval from the end of Year 1 to the end of Year 3.
 
+
+## Spreadsheet
+
+[Download my Week 4 Excel spreadsheet](../spreadsheets/04-Bonds.xlsx)
+
+
