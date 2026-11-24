@@ -255,7 +255,7 @@ We have been given an initial deposit of £1,000 to invest for one year at an un
 In Part (a) the random annual growth factor is specified as having a lognormal distribution with parameters 0.03 and 0.01 squared.
 
 $$
-1+R\sim\operatorname{LogNormal}(0.03,0.01^2)
+1+R\sim\mathrm{LogNormal}(0.03,0.01^2)
 $$
 
 Because the interest rate is random, we don't know exactly how much the £1,000 will be worth at the end of a year. However, we can calculate its average value across the possible outcomes. That average value is called the expected value.
@@ -271,7 +271,7 @@ Using the formula for calculating the expected value of a lognormally distribute
 For a log-normal random variable:
 
 $$
-X\sim\operatorname{LogNormal}(\mu,\sigma^2)
+X\sim\mathrm{LogNormal}(\mu,\sigma^2)
 $$
 
 $$
@@ -313,7 +313,7 @@ $$
 Since R is normally distributed:
 
 $$
-e^R\sim\operatorname{LogNormal}(0.03,0.01^2)
+e^R\sim\mathrm{LogNormal}(0.03,0.01^2)
 $$
 
 Therefore:
@@ -327,5 +327,3 @@ E[A]\approx1030.51
 $$
 
 Thus, again, the expected accumulated value is £1,030.51.
-
-
