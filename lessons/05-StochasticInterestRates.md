@@ -168,3 +168,164 @@ $$
 Therefore, there is a difference of £5.09 between the two calculations, showing that using the average interest rate does not necessarily produce the same result as the expected accumulated value.
 
 
+## Solved Exercises
+
+### Exercise 1 – Uncertain Interest Rates
+
+We have an investment of P for 1 year in which the interest rate is unknown. The possibilities are a 30% chance that the interest rate will be 3%, and a 70% chance that the interest rate will be 3.5%.
+
+**Part (a) – Continuously Compounded Interest**
+
+Part (a) states that the rates are compounded continuously. This means the growth of our investment can be described using the exponential function. For example, if the interest rate was 3% then the amount would grow to about 1.030455P. If the interest rate was 3.5%, then it would grow to about 1.035620P.
+
+Using the continuous compounding formula:
+
+$$
+A=Pe^R
+$$
+
+At 3%:
+
+$$
+A_1=Pe^{0.03}=1.030455P
+$$
+
+At 3.5%:
+
+$$
+A_2=Pe^{0.035}=1.035620P
+$$
+
+If we multiply each possibility by the associated likelihood and add those results together, we get an expected value of accumulation of 1.034070P.
+
+**Expected Accumulated Value:**
+
+$$
+E[A]=P(0.3e^{0.03}+0.7e^{0.035})
+$$
+
+$$
+E[A]\approx1.034070P
+$$
+
+**Part (b) – Effective Annual Interest**
+
+Part (b) treats the interest rate as an effective annual interest rate. In this case, our investment increases in size by being multiplied by one plus the interest rate. Therefore, there are two possible accumulated values after one year, namely 1.03P and 1.035P.
+
+Using the annual compounding formula:
+
+$$
+A=P(1+R)
+$$
+
+At 3%:
+
+$$
+A_1=P(1.03)=1.03P
+$$
+
+At 3.5%:
+
+$$
+A_2=P(1.035)=1.035P
+$$
+
+Taking the weighted average of these values gives an expected accumulated value of 1.0335P.
+
+**Expected Accumulated Value:**
+
+$$
+E[A]=P(0.3(1.03)+0.7(1.035))
+$$
+
+$$
+E[A]=1.0335P
+$$
+
+The two expected values differ slightly because the methods of compounding interest are different.
+
+---
+
+### Exercise 4 – Log-Normal Interest Rates
+
+We have been given an initial deposit of £1,000 to invest for one year at an unknown and uncertain interest rate. Thus the interest rate is modelled by some form of probability distribution.
+
+**Part (a) – Log-Normal Growth Factor**
+
+In Part (a) the random annual growth factor is specified as having a lognormal distribution with parameters 0.03 and 0.01 squared.
+
+$$
+1+R\sim\operatorname{LogNormal}(0.03,0.01^2)
+$$
+
+Because the interest rate is random, we don't know exactly how much the £1,000 will be worth at the end of a year. However, we can calculate its average value across the possible outcomes. That average value is called the expected value.
+
+The accumulated value is:
+
+$$
+A=1000(1+R)
+$$
+
+Using the formula for calculating the expected value of a lognormally distributed variable, the expected accumulated value after a year is about £1,030.51.
+
+For a log-normal random variable:
+
+$$
+X\sim\operatorname{LogNormal}(\mu,\sigma^2)
+$$
+
+$$
+E[X]=e^{\mu+\frac{\sigma^2}{2}}
+$$
+
+Therefore:
+
+$$
+E[A]=1000e^{0.03+\frac{0.01^2}{2}}
+$$
+
+$$
+E[A]=1000e^{0.03005}
+$$
+
+$$
+E[A]\approx1030.51
+$$
+
+**Expected Accumulated Value: £1,030.51**
+
+**Part (b) – Normally Distributed Continuous Interest Rate**
+
+In Part (b), the interest rate is compounded continuously and has a normal distribution with a mean of 0.03 and a variance of 0.01 squared.
+
+$$
+R\sim N(0.03,0.01^2)
+$$
+
+The accumulation of value from continuously compounding is based on the exponential of the interest rate. Therefore this produces the same log-normal distribution for the investment's growth factor as produced in Part (a).
+
+The accumulated value is:
+
+$$
+A=1000e^R
+$$
+
+Since R is normally distributed:
+
+$$
+e^R\sim\operatorname{LogNormal}(0.03,0.01^2)
+$$
+
+Therefore:
+
+$$
+E[A]=1000e^{0.03+\frac{0.01^2}{2}}
+$$
+
+$$
+E[A]\approx1030.51
+$$
+
+Thus, again, the expected accumulated value is £1,030.51.
+
+
