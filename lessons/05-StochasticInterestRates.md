@@ -327,3 +327,9 @@ E[A]\approx1030.51
 $$
 
 Thus, again, the expected accumulated value is £1,030.51.
+
+
+## Spreadsheet
+
+[Download my Week 5 Excel spreadsheet](../spreadsheets/05-StochasticInterestRates.xlsx)
+
