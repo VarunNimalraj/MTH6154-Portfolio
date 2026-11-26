@@ -35,7 +35,7 @@ $$
 
 This allows us to calculate probabilities of different future investment values using the normal distribution.
 
-### Shares (Section 5.1)
+### Shares
 
 Stocks represent fractional ownership in a company. In addition to potentially increasing stock prices over time, investors may receive dividend income as payments made by companies to their shareholders.
 
