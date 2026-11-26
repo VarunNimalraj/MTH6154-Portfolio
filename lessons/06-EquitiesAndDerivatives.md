@@ -95,3 +95,34 @@ Where:
 - \(K\) = Agreed forward delivery price
 
 A long forward position gains value when the asset price at maturity exceeds the agreed delivery price.
+
+
+### Options
+
+Financial Options provide the holder with the "right", but not the obligation, to buy or sell a designated underlying asset at a specific price ("strike"). There are two types of options: Call Options -- where the buyer has the right to purchase the underlying asset; Put Option -- where the buyer has the right to sell the underlying asset. European style options are exercisable at expiration only, while American style options have the ability to be exercised at any time up to and including expiration. Unlike forward contracts, option buyers can choose not to exercise if the price moves unfavourably, but they pay a premium for this right.
+
+**Payoff of a European Call Option:**
+
+$$
+C_T=\max(S_T-K,0)
+$$
+
+**Payoff of a European Put Option:**
+
+$$
+P_T=\max(K-S_T,0)
+$$
+
+Where:
+
+- \(S_T\) = Price of the underlying asset at expiry
+- \(K\) = Strike price
+- \(C_T\) = Call option payoff at expiry
+- \(P_T\) = Put option payoff at expiry
+
+For a call option, the holder benefits when the market price exceeds the strike price. For a put option, the holder benefits when the market price falls below the strike price.
+
+If exercising an option would be unfavourable, the holder can let it expire without exercising.
+
+These formulas represent the payoffs at expiry and do not deduct the premium paid to purchase the option.
+
