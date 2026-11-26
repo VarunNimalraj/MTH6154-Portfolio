@@ -290,8 +290,6 @@ $$
 \lim_{r\to0^+}\tau(r)=\infty
 $$
 
----
-
 ### Exercise 2: Present Value, Duration, Effective Duration and Convexity
 
 This question calculates the present value, duration, effective duration and convexity for two different types of cash flow. In this case, we are given an interest rate of 4%, which will be compounded on a continuous basis.
