@@ -69,8 +69,6 @@ $$
 
 Redington immunisation therefore requires matching present values and durations, alongside the convexity condition.
 
----
-
 ## My Example
 
 Suppose you need to repay an amount of £1,050 in 2 years time. In order to plan for this repayment, you currently hold a couple of investments. One investment is expected to earn £500 in one year; the other investment will be worth £551.25 in three years. You also know the interest rate is 5% per annum, and that the interest is compounded on an annual basis.
