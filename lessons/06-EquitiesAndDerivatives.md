@@ -165,3 +165,40 @@ $$
 
 **Net Profit: £7**
 
+### If the Share Price Falls
+
+On the other hand, assume the stock price falls to £45. Because it is cheaper to buy the stock outright for £45 than to buy it for £50, there is no reason to use your option to buy the stock.
+
+**Calculations:**
+
+Share price at expiry:
+
+$$
+S_T=45
+$$
+
+Call option payoff:
+
+$$
+C_T=\max(S_T-K,0)
+$$
+
+$$
+C_T=\max(45-50,0)=0
+$$
+
+Net profit after deducting the £3 premium:
+
+$$
+\text{Net Profit}=0-3=-3
+$$
+
+**Net Loss: £3**
+
+As such, the option lapses, or "dies," at expiration and you lose only your original premium of £3.
+
+### Conclusion
+
+In conclusion, the way a call option works gives investors a chance to earn profits when stocks are rising, but limits losses to just the amount of money invested in premiums.
+
+
