@@ -52,3 +52,46 @@ $$
 $$
 
 The market capitalisation represents the total market value of a company's outstanding shares.
+
+### Forward Contracts
+
+Forward contracts involve agreements between two parties to purchase (or sell) a specific underlying asset on a pre-determined date, at a previously agreed upon price. Forward contracts can be employed to hedge against changes in underlying assets' future price levels, or to speculate on future price movement. The no-arbitrage pricing relationship provides a basis for determining the fair forward price.
+
+**Fair Forward Price:**
+
+$$
+F=\frac{S}{D(T)}
+$$
+
+Where:
+
+- \(F\) = Fair forward price
+- \(S\) = Current spot price of the underlying asset
+- \(D(T)\) = Discount factor to maturity time \(T\)
+
+For a continuously compounded interest rate \(r\):
+
+$$
+D(T)=e^{-rT}
+$$
+
+Therefore:
+
+$$
+F=Se^{rT}
+$$
+
+These formulas assume that the underlying asset provides no income before maturity and that there are no storage costs.
+
+**Payoff of a Long Forward Position at Maturity:**
+
+$$
+\text{Payoff}=S_T-K
+$$
+
+Where:
+
+- \(S_T\) = Market price of the underlying asset at maturity
+- \(K\) = Agreed forward delivery price
+
+A long forward position gains value when the asset price at maturity exceeds the agreed delivery price.
