@@ -192,8 +192,6 @@ $$
 
 All three Redington immunisation conditions are satisfied.
 
----
-
 ## Solved Exercises
 
 ### Exercise 1: Duration of a Perpetuity
