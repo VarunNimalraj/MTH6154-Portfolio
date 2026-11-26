@@ -126,3 +126,42 @@ If exercising an option would be unfavourable, the holder can let it expire with
 
 These formulas represent the payoffs at expiry and do not deduct the premium paid to purchase the option.
 
+
+## My Example – European Call Option
+
+Suppose you buy a European call option on a single share that has a strike price of £50. You pay £3 as your option premium (the amount of money required to purchase the option). In 90 days, the option expires.
+
+Assume when the option matures, the stock is trading at £60. Then you have the right to buy the stock for £50. As the stock was selling for £60, you will make a gain of £10 by exercising your option. But remember, the total cost of acquiring the stock will be £53 (£50 + £3), so your net profit is £7.
+
+**Calculations:**
+
+Strike price:
+
+$$
+K=50
+$$
+
+Share price at expiry:
+
+$$
+S_T=60
+$$
+
+Call option payoff:
+
+$$
+C_T=\max(S_T-K,0)
+$$
+
+$$
+C_T=\max(60-50,0)=10
+$$
+
+Net profit after deducting the £3 premium:
+
+$$
+\text{Net Profit}=10-3=7
+$$
+
+**Net Profit: £7**
+
