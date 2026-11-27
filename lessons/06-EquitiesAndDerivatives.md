@@ -201,54 +201,21 @@ As such, the option lapses, or "dies," at expiration and you lose only your orig
 
 In conclusion, the way a call option works gives investors a chance to earn profits when stocks are rising, but limits losses to just the amount of money invested in premiums.
 
+
 ## Solved Exercises
 
-### Exercise 2 – Payoffs of Financial Derivatives
+### Exercise 1 – Financial Derivatives
 
-We need to find and graph the payoffs from three types of derivative products in terms of the stock price at expiration.
+**(a) – A Forward Contract**
 
-**Part (a) – European Call Option**
+A forward contract is one that is entered into by two parties who agree to either buy or sell an investment product for a pre-determined price on some future date. Neither party in a standard forward contract has to make an initial payment when they enter the agreement.
 
-In this case, we have a European Call Option which has an exercise price of £40 and gives the owner the right to buy 3 shares. For any value of the share price at expiration that is less than or equal to £40, there will be no payoff from the option since the owner will not choose to purchase. When the value of the share price at expiration is greater than £40, the payoff from the option increases by £3 per £1 over the strike price.
+**(b) – A European Call Option**
 
-The payoff function is:
+A European call option provides the buyer with the right, but not the obligation, to purchase an underlying investment at a predetermined strike price. A European option may be exercised only on its expiration date.
 
-$$
-V(T)=3\max(S_T-40,0)
-$$
+**(c) – An American Put Option**
 
-Where \(S_T\) is the share price at expiration.
-
-**Payoff Graph:**
-
-![European Call Option Payoff](06-Exercise2-Call.png)
-
-**Part (b) – European Put Option**
-
-Here we have a European Put Option with an exercise price of £100 to sell 2 shares. A Put Option will provide a payoff when the value of the share price drops under £100. The Put Option will expire worthless when the value of the share price at expiration is at or above £100.
-
-The payoff function is:
-
-$$
-V(T)=2\max(100-S_T,0)
-$$
-
-**Payoff Graph:**
-
-![European Put Option Payoff](06-Exercise2-Put.png)
-
-**Part (c) – Forward Contract**
-
-In this case, we have a Forward Contract to sell 2 shares for £80 each. The Forward Contract generates a positive payoff as long as the value of the share price at expiration is less than £80. It creates a negative payoff as long as the value of the share price at expiration is greater than £80. If the share price is exactly £80, the payoff is zero.
-
-The payoff function is:
-
-$$
-V(T)=2(80-S_T)
-$$
-
-**Payoff Graph:**
-
-![Short Forward Contract Payoff](06-Exercise2-Forward.png)
+An American put option provides the buyer with the right, but not the obligation, to sell an underlying investment at a predetermined strike price. Unlike a European option, this type of option may be exercised at any point prior to and including its expiration date.
 
 
