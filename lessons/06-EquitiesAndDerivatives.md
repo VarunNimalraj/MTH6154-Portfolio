@@ -286,4 +286,8 @@ $$
 **Final Answer: 7.62%**
 
 
+## Spreadsheet
+
+[Download my Week 6 Excel spreadsheet](../spreadsheets/06-EquitiesAndDerivatives.xlsx)
+
 
