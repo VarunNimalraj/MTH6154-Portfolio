@@ -12,7 +12,8 @@ module MTH6154 Financial Mathematics I.
 | 3 | Immunisation | [notes](lessons/03-Immunisation.md) | [xlsx](spreadsheets/03-Immunisation.xlsx) |
 | 4 | Bonds | [notes](lessons/04-Bonds.md) | [xlsx](spreadsheets/04-Bonds.xlsx) |
 | 5 | Stochastic interest rates | [notes](lessons/05-StochasticInterestRates.md) | [xlsx](spreadsheets/05-StochasticInterestRates.xlsx) |
-| 6 | Equities and derivatives | [notes](lessons/06-EquitiesAndDerivatives.md) | |
+| 6 | Equities and derivatives | [notes](lessons/06-EquitiesAndDerivatives.md) | [xlsx](spreadsheets/06-EquitiesAndDerivatives.xlsx) |
+
 
 ## AI use
 
