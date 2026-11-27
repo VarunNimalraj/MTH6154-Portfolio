@@ -218,4 +218,72 @@ A European call option provides the buyer with the right, but not the obligation
 
 An American put option provides the buyer with the right, but not the obligation, to sell an underlying investment at a predetermined strike price. Unlike a European option, this type of option may be exercised at any point prior to and including its expiration date.
 
+### Exercise 4 – Put-Call Parity
+
+We have a stock with a present price of £12.00. Options (both European call and European put) are available for this same stock. Both call and put options have the same strike price of £30.00, as well as the same expiration date -- 10 years from now. A call option has a cost of £12.50, whereas a put option has a cost of £14.50.
+
+The objective here is to determine the implied interest rate (assuming it is compounded continuously).
+
+The method I am going to describe allows you to utilise the Put-Call Parity Relationship. This relationship ties together the values of European call options and European put options; as well as the current value of the underlying share and its strike price, using the discount factor.
+
+**Put-Call Parity Formula:**
+
+$$
+C-P=S_0-Ke^{-rT}
+$$
+
+Where:
+
+- \(C\) = Call option price
+- \(P\) = Put option price
+- \(S_0\) = Current share price
+- \(K\) = Strike price
+- \(r\) = Continuously compounded annual interest rate
+- \(T\) = Time until expiration
+
+Once we plug in all known quantities into the Put-Call Parity Equation, we can manipulate this equation so as to obtain our discount factor.
+
+**Substituting the Values:**
+
+$$
+12.50-14.50=12-30e^{-10r}
+$$
+
+$$
+-2=12-30e^{-10r}
+$$
+
+$$
+30e^{-10r}=14
+$$
+
+$$
+e^{-10r}=\frac{14}{30}
+$$
+
+$$
+D(10)=0.466667
+$$
+
+Our discount factor turns out to be about 0.467.
+
+**Calculating the Interest Rate:**
+
+Taking the natural log of this value, and dividing by -10, since our options are scheduled to expire in ten years, we get an annual continuously compounded interest rate of approximately 7.62%.
+
+$$
+-10r=\ln\left(\frac{14}{30}\right)
+$$
+
+$$
+r=-\frac{\ln(14/30)}{10}
+$$
+
+$$
+r\approx0.076214
+$$
+
+**Final Answer: 7.62%**
+
+
 
